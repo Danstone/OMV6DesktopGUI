@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Check if script is run as root
+if [ "$(id -u)" -ne 0 ]; then
+    echo "This script must be run as root."
+    exit 1
+fi
+
+# Update package lists
+apt update
+
+# Install Xorg and xorg-tools
+apt install -y xorg xorg-utils
+
+# Install a basic X Window Manager (xwm)
+# Replace 'your_xwm_package' with the actual package name of the window manager you want to install
+apt install -y xwm
+
+# Start the X server
+startx
