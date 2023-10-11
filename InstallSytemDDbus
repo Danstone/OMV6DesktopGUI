@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Check if script is run as root
+if [ "$(id -u)" -ne 0 ]; then
+    echo "This script must be run as root."
+    exit 1
+fi
+
+# Update package lists
+apt update
+
+# Install D-Bus
+apt install -y dbus
+
+# Enable and start D-Bus service
+systemctl enable dbus
+systemctl start dbus
+
+# Install systemd
+apt install -y systemd
+
+# Switch to systemd as init system
+ln -sf /lib/systemd/systemd /sbin/init
+
+# Reboot to apply changes
+reboot
