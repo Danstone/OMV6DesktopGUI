@@ -4,9 +4,11 @@ Desktop Environment On Open Media Vault 6.1
 Prerequisites:
 
 • Debian Base Files
+    
     • Open Media Vault v6.1
     • Open Media Vault Extras Package:
-        • OMV-EXTRAS-SHARE-ROOTFS
+        
+    • OMV-EXTRAS-SHARE-ROOTFS
         • OMV-EXTRAS-APT-TOOLS
             • Edit: ./ETC/APT/SOURCES.LIST (suggest using Nano)
 
@@ -18,6 +20,7 @@ Prerequisites:
 
 Add full debian 11 Repository to Open Media Vault Aptitude sources.
 etc/apt/sources.list/
+'sudo nano etc/apt/sources.list'
     
     deb http://deb.debian.org/debian/ bullseye main contrib non-free
     deb-src http://deb.debian.org/debian/ bullseye main contrib non-free
