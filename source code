@@ -1,0 +1,92 @@
+
+## 1. wget
+
+```bash
+sudo apt install build-essential
+wget https://ftp.gnu.org/gnu/wget/wget-1.21.tar.gz
+tar -xzf wget-1.21.tar.gz
+cd wget-1.21
+./configure
+make
+sudo make install
+```
+
+## 2. dbus
+
+```bash
+sudo apt install build-essential
+sudo apt build-dep dbus
+sudo apt source dbus
+cd dbus-1.12.16
+./configure
+make
+sudo make install
+```
+
+## 3. systemd
+
+```bash
+sudo apt install build-essential
+sudo apt build-dep systemd
+sudo apt source systemd
+cd systemd-247
+./configure
+make
+sudo make install
+```
+
+## 4. xserver-xorg
+
+```bash
+sudo apt install build-essential
+sudo apt build-dep xserver-xorg
+sudo apt source xserver-xorg
+cd xserver-xorg-1.20.10
+./configure
+make
+sudo make install
+```
+
+## 5. xorg-x11-utils
+
+```bash
+sudo apt install build-essential
+sudo apt build-dep x11-utils
+sudo apt source x11-utils
+cd x11-utils-7.7+3
+./configure
+make
+sudo make install
+```
+
+## 6. xwm
+
+```bash
+sudo apt install build-essential
+sudo apt build-dep xwm
+sudo apt source xwm
+cd xwm-1.0.5
+./configure
+make
+sudo make install
+```
+
+## 7. tasksel
+
+```bash
+sudo apt install build-essential
+sudo apt build-dep tasksel
+sudo apt source tasksel
+cd tasksel-3.54
+./configure
+make
+sudo make install
+```
+
+## Additional Instructions
+
+- For installing OMV-Extras, refer to [OMV-Extras GitHub Repository](https://github.com/OpenMediaVault-Plugin-Developers/packages).
+- Ensure to follow the specific instructions provided by each package for any additional configurations or dependencies.
+```
+
+You can copy this content into a markdown file (e.g., `compile_instructions.md`) and include it in your GitHub repository. Each section provides instructions for compiling a specific package from source code. Make sure to replace version numbers with the actual versions you're working with, and update any additional dependencies or build instructions specific to each package.
