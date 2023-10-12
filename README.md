@@ -12,7 +12,18 @@ Prerequisites:
     • OMV-EXTRAS-SHARE-ROOTFS
 
 Add full debian 11 Repository to Open Media Vault Aptitude sources.
+    deb http://deb.debian.org/debian/ bullseye main contrib non-free
+    deb-src http://deb.debian.org/debian/ bullseye main contrib non-free
 
+    deb http://deb.debian.org/debian/ bullseye-updates main contrib non-free
+    deb-src http://deb.debian.org/debian/ bullseye-updates main contrib non-free
+
+    deb http://security.debian.org/debian-security bullseye/updates main contrib non-free
+    deb-src http://security.debian.org/debian-security bullseye/updates main contrib non-free
+
+    # Debian backports
+    deb http://deb.debian.org/debian bullseye-backports main contrib non-free
+    deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
 Getting started:
 
     1.Install Dbus [sudo apt install dbus]
