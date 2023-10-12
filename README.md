@@ -5,11 +5,11 @@ Prerequisites:
 
 • Debian Base Files
 
-• OMV 6 Extras Package 🔽
+'''• OMV 6 Extras Package 
 
     • OMV-EXTRAS-APT-TOOL
 
-    • OMV-EXTRAS-SHARE-ROOTFS
+    • OMV-EXTRAS-SHARE-ROOTFS'''
 
 Add full debian 11 Repository to Open Media Vault Aptitude sources.
 etc/apt/sources.list/
