@@ -1,0 +1,35 @@
+	1. Install wget
+		sudo apt install wget
+	2. Install OMV-EXTRAS
+		wget -O - https://github.com/OpenMediaVault-Plugin-Developers/packages/raw/master/install | bash
+		#in web gui under updates enable extras, install share rootfs,and install apt tool.
+	3.	Install Dbus:
+		sudo apt install dbus
+	4.	Install Systemd:
+		sudo apt install systemd
+	5.	Install Xorg:
+		sudo apt install xserver-xorg
+	6.	Install Xorg tools:
+		sudo apt install xorg-x11-utils && xorg-toola
+	7.	Install xwm:
+		sudo apt install xw.
+	8.	Reinstall open media vault files:
+		sudo apt install tasksel
+		wget -O - https://github.com/OpenMediaVault-Plugin-Developers/packages/raw/master/install | sudo bash
+	9.	Use omv-fistaid to join the web Gui back to the network:
+		sudo omv-confdbadm setconf webgui port <80>
+		sudo systemctl restart openmediavault-engined
+	10.	Use omv-fistaid to re-enter web Gui admin password:
+		sudo omv-confdbadm setconf webadmin password <openmediavault>
+	 # this will set password for web gui to default!
+	11.	Fix PHP permissions:
+		sudo omv-salt deploy run phpfpm
+		sudo systemctl restart php-fpm
+
+Here is a simplified list with the package names based on your instructions:
+
+	•	dbus
+	•	systemd
+	•	xorg
+	•	xwm
+	• tasksel
