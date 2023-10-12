@@ -41,7 +41,7 @@ sudo apt install systemd
 sudo apt install xserver-xorg
 
 # Step 6: Install Xorg tools
-sudo apt install xorg-x11-utils && xorg-toola
+sudo apt install xorg-x11-utils && xorg-tools
 
 # Step 7: Install xwm
 sudo apt install xw.
