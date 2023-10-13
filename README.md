@@ -4,8 +4,15 @@ Desktop Environment On Open Media Vault 6.1
 Prerequisites:
 
 • Debian Base Files
+    
+    • Open Media Vault v6.1
+    • Open Media Vault Extras Package:
+        
+    • OMV-EXTRAS-SHARE-ROOTFS
+        • OMV-EXTRAS-APT-TOOLS
+            • Edit: ./ETC/APT/SOURCES.LIST (suggest using Nano)
 
-• OMV 6 Extras Package 🔽
+• OMV 6 Extras Package 
 
     • OMV-EXTRAS-APT-TOOL
 
@@ -13,6 +20,7 @@ Prerequisites:
 
 Add full debian 11 Repository to Open Media Vault Aptitude sources.
 etc/apt/sources.list/
+_sudo nano etc/apt/sources.list_
     
     deb http://deb.debian.org/debian/ bullseye main contrib non-free
     deb-src http://deb.debian.org/debian/ bullseye main contrib non-free
@@ -28,7 +36,7 @@ etc/apt/sources.list/
     deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
 Getting started:
 
-    1.Install Dbus [sudo apt install dbus]
+    1. Install Dbus [sudo apt install dbus]
     2. Install Systemd [sudo apt install systemd]
     3. Install Xorg [sudo apt install xorg]
     4. Install Xorg tools
@@ -43,5 +51,4 @@ Then:
 • Relaunch nginx
 • re-salt the server. Run: [omv-salt deploy run nginx]
 
-⚠️Note do not set X to auto start, this will break open media vault, instead use xinit or startx from cli when you need to use the gui
-Use ctrl+c to close a desktop app.⚠️
+**⚠️ Note do not set X to auto start, this will break open media vault, instead use xinit or startx from cli when you need to use the gui Use ctrl+c to close a desktop app. ⚠️**
