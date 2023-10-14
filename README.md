@@ -1,5 +1,5 @@
 # OMV6DesktopGUI
-# Desktop Environment On Open Media Vault 6.1 #
+ Desktop Environment On Open Media Vault 6.1 
 
 ## Prerequisites: #
 
