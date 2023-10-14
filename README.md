@@ -18,7 +18,7 @@
 
     • OMV-EXTRAS-SHARE-ROOTFS
 
-*Add full debian 11 Repository to Open Media Vault Aptitude sources.*
+** Add full debian 11 Repository to Open Media Vault Aptitude sources. **
     etc/apt/sources.list/
     _sudo nano etc/apt/sources.list_
     
