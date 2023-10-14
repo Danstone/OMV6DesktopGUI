@@ -1,7 +1,7 @@
 # OMV6DesktopGUI
-Desktop Environment On Open Media Vault 6.1
+#Desktop Environment On Open Media Vault 6.1#
 
-Prerequisites:
+##Prerequisites:#
 
 • Debian Base Files
     
@@ -34,7 +34,7 @@ _sudo nano etc/apt/sources.list_
     # Debian backports
     deb http://deb.debian.org/debian bullseye-backports main contrib non-free
     deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
-Getting started:
+###Getting started:#
 
     1. Install Dbus [sudo apt install dbus]
     2. Install Systemd [sudo apt install systemd]
